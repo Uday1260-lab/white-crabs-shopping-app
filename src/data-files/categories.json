@@ -3,13 +3,13 @@
         "id": "fgsa2142fa",
         "name": "Keyboards",
         "description": "Buy different keyboard from any brand available",
-        "icon": "<i class='far fa-keyboard'></i>"
+        "icon": "fas fa-keyboard"
       },
       {
         "id": "xasgy42fa",
         "name": "Headphones",
         "description": "Find best-fit for your ears",
-        "icon": "<i class='fas fa-headphones-alt'></i>"
+        "icon": "fas fa-headphones"
       }
     ]
     

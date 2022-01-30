@@ -3,9 +3,10 @@ import 'rsuite/dist/rsuite.min.css';
 import { Route , Switch } from 'react-router';
 import Category from "./Category/Category";
 import CategoryItems from "./Category/CategoryItems";
-import NavBar from "./NavBar/NavBar";
+import NavBarList from "./NavBarList/NavBarList";
 import React from "react";
-import './App.css'
+import './App.css';
+import Cart from "./Cart/Cart";
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
                 <div className="head" >
                     <h1 >White Crabs</h1>
                 </div>            
-                <NavBar/>
+                <NavBarList/>
                 <Switch>
                     <Route exact path='/'>
                         <Home />
@@ -25,6 +26,10 @@ function App() {
                     <Route exact path='/category/:categoryId'>
                         <CategoryItems />
                     </Route>
+                    <Route exact path='/cart' >
+                        <Cart />
+                    </Route>
+
                 </Switch>
             </>
     );

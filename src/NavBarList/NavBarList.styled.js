@@ -1,5 +1,34 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+export const NavBarWrapper = styled.div`
+
+  .navbar{
+    background-color-: #FFC900;
+    font-size: 20px;
+    .dropdown{
+      
+      background-color:#BAFFB4; 
+    li{   
+      padding: 5px;
+      padding-left: 10px;
+
+      .active{
+        font-size: 30px;
+        color: #F14A16;
+      }
+      .inactive{
+        color: #1A374D;
+        font-size: 20px;
+      }      
+    }
+  }
+  }
+
+  
+  
+
+`;
+
 export const NavList = styled.ul`
   display: flex;
   background-color: #FFC900 ;

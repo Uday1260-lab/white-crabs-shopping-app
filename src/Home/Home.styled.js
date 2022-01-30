@@ -10,7 +10,7 @@ export const HomeWrapper = styled.div`
         Button{
             font-size: 30px;
             padding: 20px 40px;
-            background: #B8405E;
+            background: #FFC900;
             Link{
                 color: #FFC900
             } 
