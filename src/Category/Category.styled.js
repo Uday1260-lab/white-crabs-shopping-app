@@ -3,16 +3,16 @@ import styled from "styled-components";
 export const CategoryWrapper = styled.div`
 
     text-align: center;
-    margin: 100px;
+    margin: 5%;
     p{
-        font-size: 40px;
+        font-size: 300%;
     }
 
     Button{
-        font-size: 35px;
-        padding:20px;
-        margin: 20px;
-        height:175px;
+        font-size: 300%;
+        padding: 2%;
+        margin: 2%;
+        height: 50%;
         width: 400px;
         i{
             font-size: 40px;
@@ -23,6 +23,7 @@ export const CategoryWrapper = styled.div`
             font-size: 25px;
         }
         small{
+            word-break: break-all;
             font-size: 15px;
         }
     }

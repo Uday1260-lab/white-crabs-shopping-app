@@ -23,7 +23,7 @@ function App() {
                     <Route exact path='/category'>
                         <Category />
                     </Route>
-                    <Route exact path='/category/:categoryId'>
+                    <Route exact path='/category/:catId'>
                         <CategoryItems />
                     </Route>
                     <Route exact path='/cart' >

@@ -1,9 +1,6 @@
 import React, { createContext, useContext, useEffect, useReducer } from 'react';
 
-const reducer = (
-  cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]'),
-  action
-) => {
+const reducer = ( cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]'), action ) => {
   switch (action.type) {
     case 'ADD_TO_CART': {
       const addedItems = [...cartItems];
@@ -34,6 +31,7 @@ const reducer = (
           );
           return deletingProduct;
         }
+        else
         data.qty -= 1;
       }
       return addedItems;

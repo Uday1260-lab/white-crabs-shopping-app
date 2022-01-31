@@ -10,7 +10,7 @@ const Items = ({item}) => {
     <ItemWrapper>
         <Panel className='panel'>
             <h3 className='title' >{name}</h3>
-            <img src={thumbnail ? thumbnail : NOT_FOUND_IMAGE} width="400" height="200" alt='SomeThing' />
+            <img src={thumbnail ? thumbnail : NOT_FOUND_IMAGE} width="70%" height="50%" alt='SomeThing' />
             <p className='price'>Price :- { currency + price } </p>
             {delivery ? (<p style={{ color: 'green' }}>Can be delivered with 2 working days.</p>) : (<p style={{ color: 'red' }}>*Due to some inconvenience <br/> We cannot deliver it.</p>)}
             {inStock ? (<p style={{ color: 'green' }}> INSTOCK </p>) : (<p style={{ color: 'red' }}> *OUT OF STOCK </p>)}
