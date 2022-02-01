@@ -4,35 +4,35 @@ const reducer = ( cartItems = JSON.parse(localStorage.getItem('cartItems') || '[
   switch (action.type) {
     case 'ADD_TO_CART': {
       const addedItems = [...cartItems];
-      const data = addedItems.find(d => d.id === action.id);
-      if (data) {
-        data.qty += 1;
+      const item = addedItems.find(d => d.id === action.id);
+      if (item) {
+        item.qty += 1;
       } else {
-        action.product.qty = 1;
-        addedItems.push(action.product);
+        action.products.qty = 1;
+        addedItems.push(action.products);
       }
       return addedItems;
     }
 
     case 'DELETE_FROM_CART': {
-      const deletingProduct = cartItems.filter(
+      const deletingProductsproducts = cartItems.filter(
         deleteThisItem => deleteThisItem.id !== action.item.id
       );
-      return deletingProduct;
+      return deletingProductsproducts;
     }
 
     case 'DECREASE_QTY': {
       const addedItems = [...cartItems];
-      const data = addedItems.find(d => d.id === action.id);
-      if (data) {
-        if (data.qty === 1) {
-          const deletingProduct = cartItems.filter(
+      const item = addedItems.find(d => d.id === action.id);
+      if (item) {
+        if (item.qty === 1) {
+          const deletingProductsproducts = cartItems.filter(
             deleteThisItem => deleteThisItem.id !== action.item.id
           );
-          return deletingProduct;
+          return deletingProductsproducts;
         }
         else
-        data.qty -= 1;
+        item.qty -= 1;
       }
       return addedItems;
     }

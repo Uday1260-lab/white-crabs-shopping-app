@@ -1,14 +1,16 @@
-import React, { memo } from 'react';
+import React, { memo, useState } from 'react';
 import { useParams } from 'react-router';
-import products from '../data-files/products.json';
+import productsData from '../data-files/products.json';
 import Items from './Items';
 
 const CategoryItems = () => {
     const { catId } = useParams();
+    const [products] = useState( productsData.filter( Element => Element.categoryId === catId ) );
     return( 
-        <div>
+        <div> 
             <h2 align="center" >Category Items</h2>
-            {products.map( Element => ( catId === Element.categoryId && <Items key={Element.id} item={Element} /> ))}
+            { products.map( Element => <Items key={Element.id} products={Element} /> ) }
+            
         </div>
     );
 };
