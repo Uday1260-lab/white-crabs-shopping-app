@@ -31,8 +31,10 @@ const reducer = ( cartItems = JSON.parse(localStorage.getItem('cartItems') || '[
           );
           return deletingProductsproducts;
         }
-        else
-        item.qty -= 1;
+        else{
+          item.qty -= 1;
+        }
+        
       }
       return addedItems;
     }

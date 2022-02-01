@@ -23,7 +23,7 @@ export const ItemWrapper = styled.div`
         }
 
         img{
-            border-radius: 20px;
+            border-radius: 10%;
             padding: 2%;
         }
 

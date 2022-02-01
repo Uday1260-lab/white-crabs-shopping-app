@@ -1,6 +1,8 @@
 import React from 'react';
-import { Button } from 'rsuite';
+import { Button, Panel, Tooltip, Whisper } from 'rsuite';
 import { useCart } from '../Context/Item.context';
+import NOT_FOUND_IMAGE from '../Images/not-found.jpg'
+import { ItemsInCartWrapper } from './ItemsInCart.styled';
 
 const ItemsInCart = ({ item, deleteItem }) => {
     
@@ -27,27 +29,39 @@ const ItemsInCart = ({ item, deleteItem }) => {
   };
 
   return (
-    <div className="cart-item-container">
-      <div className="img">
-        <img src={thumbnail} alt="img" className="img-in-cart" />
-      </div>
-      <div className="info">
-        <h5 className="info-name">{name}</h5>
-        <div className="info-price">
-          {currency} {price}
-        </div>
-        <Button onClick={decreaseQty} className="btn-icon">
-            <i class="far fa-minus-square"></i>
-        </Button>
-        <Button onClick={increaseQty} className="btn-icon">
-            <i class="far fa-plus-square"></i>
-        </Button>
-        <Button onClick={() => deleteItem(item)} className="btn-icon">
-            <i class="far fa-window-close"></i>
-        </Button>
-        <span className="info-qty">{qty}</span>
-      </div>
-    </div>
+    <ItemsInCartWrapper>
+
+            <Panel className='panel'>
+                <h4 className='title' >{name}</h4>
+                <img className='item-img' src={thumbnail ? thumbnail : NOT_FOUND_IMAGE} alt='Cart Item' />
+                                
+                <h5 className='price'> Price of Each :- { currency + " " + price } </h5>
+                <h4 className='total' > Total :- { currency + " " + price*qty }</h4>
+                
+                <h5 className='qty' >Quantity:- {qty}</h5>
+                <Whisper speaker={<Tooltip>Increase Qty</Tooltip>}>
+                  <span>
+                    <Button onClick={increaseQty} className="btn-add">                  
+                      <i class="fas fa-plus"><Tooltip /></i>
+                    </Button>
+                  </span>
+                </Whisper>
+                <Whisper speaker={<Tooltip>Decrease Qty</Tooltip>}>
+                  <span>
+                    <Button onClick={decreaseQty} className="btn-dec">
+                      <i class="fas fa-minus"></i>
+                    </Button>
+                  </span>
+                </Whisper>
+                <Whisper speaker={<Tooltip>Remove Item</Tooltip>}>
+                  <span>
+                    <Button onClick={() => deleteItem(item)} className="remove-btn">
+                      <i class="fas fa-times"></i>
+                    </Button>
+                  </span>
+                </Whisper>
+            </Panel>
+    </ItemsInCartWrapper>
   );
 };
 

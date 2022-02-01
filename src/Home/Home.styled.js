@@ -4,12 +4,12 @@ export const HomeWrapper = styled.div`
     text-align: center;
     .button{
         width: 50%;
-        margin: 50px auto; 
+        margin: 1% auto; 
         text-align: center;
-        padding: 10px;
+        padding: 2%;
         Button{
-            font-size: 30px;
-            padding: 20px 40px;
+            font-size: 200%;
+            padding: 5% 10%;
             background: #FFC900;
             Link{
                 color: #FFC900

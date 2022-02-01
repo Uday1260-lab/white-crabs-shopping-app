@@ -30,13 +30,114 @@
         "categoryId": "fgsa2142fa"
       },
       {
+        "id": "4a",
+        "name": "Logitech G915 TKL",
+        "price": 210,
+        "currency": "USD",
+        "delivery": true,
+        "thumbnail": "https://m.media-amazon.com/images/I/61V2O4vbYhL._AC_SL1500_.jpg",
+        "inStock": true,
+        "categoryId": "fgsa2142fa"
+      },
+      {
+        "id": "5a",
+        "name": "Fiodio",
+        "price": 50,
+        "currency": "USD",
+        "delivery": true,
+        "thumbnail": "https://m.media-amazon.com/images/I/71pPm31LFkS._AC_SL1500_.jpg",
+        "inStock": true,
+        "categoryId": "fgsa2142fa"
+      },
+      {
+        "id": "6a",
+        "name": "Logitech G815 RGB",
+        "price": 180,
+        "currency": "USD",
+        "delivery": true,
+        "thumbnail": "https://m.media-amazon.com/images/I/51R90b-WV1L._AC_SL1000_.jpg",
+        "inStock": false,
+        "categoryId": "fgsa2142fa"
+      },
+      {
+        "id": "7a",
+        "name": "Razer Huntsman Mini 60%",
+        "price": 130,
+        "currency": "USD",
+        "delivery": false,
+        "thumbnail": "https://m.media-amazon.com/images/I/61PwMWg2e1L._AC_SL1500_.jpg",
+        "inStock": false,
+        "categoryId": "fgsa2142fa"
+      },
+      {
+        "id": "8a",
+        "name": "Corsair K55",
+        "price": 50,
+        "currency": "USD",
+        "delivery": true,
+        "thumbnail": "https://m.media-amazon.com/images/I/71zKv-g4TtL._AC_SL1500_.jpg",
+        "inStock": true,
+        "categoryId": "fgsa2142fa"
+      },
+      {
+        "id": "9a",
+        "name": "ROCCAT Vulcan",
+        "price": 160,
+        "currency": "USD",
+        "delivery": false,
+        "thumbnail": "https://m.media-amazon.com/images/I/81tnh+kK2yL._AC_SL1500_.jpg",
+        "inStock": false,
+        "categoryId": "fgsa2142fa"
+      },
+      {
+        "id": "10a",
+        "name": "Kraken Pro 60",
+        "price": 100,
+        "currency": "USD",
+        "delivery": true,
+        "thumbnail": "https://m.media-amazon.com/images/I/81ehekaliqL._AC_SL1500_.jpg",
+        "inStock": false,
+        "categoryId": "fgsa2142fa"
+      },
+      
+      {
+        "id": "1b",
+        "name": "SteelSeries Arctis 3",
+        "price": 65,
+        "currency": "USD",
+        "delivery": true,
+        "thumbnail": "https://m.media-amazon.com/images/I/81FpaX4SvWL._AC_SL1500_.jpg",
+        "inStock": true,
+        "categoryId": "xasgy42fa"
+      },
+      {
+        "id": "2b",
+        "name": "Razer BlackShark V2",
+        "price": 80,
+        "currency": "USD",
+        "delivery": true,
+        "thumbnail": "https://m.media-amazon.com/images/I/61wrOi+03FL._AC_SL1500_.jpg",
+        "inStock": true,
+        "categoryId": "xasgy42fa"
+      },
+      {
+        "id": "3b",
+        "name": "SteelSeries Arctis Pro",
+        "price": 150,
+        "currency": "USD",
+        "delivery": true,
+        "thumbnail": "https://m.media-amazon.com/images/I/81NIli1PuqL._AC_SL1500_.jpg",
+        "inStock": false,
+        "categoryId": "xasgy42fa"
+      },
+      {
         "id": "4b",
         "name": "Razer Kraken",
         "price": 60,
         "currency": "USD",
-        "delivery": false,
+        "delivery": true,
         "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/71BKQhFzDmL._AC_SY355_.jpg",
-        "inStock": false,
+        "inStock": true,
         "categoryId": "xasgy42fa"
       },
       {
@@ -56,6 +157,46 @@
         "currency": "USD",
         "delivery": false,
         "thumbnail": "https://images-na.ssl-images-amazon.com/images/I/61kIoNSe3VL._SL1500_.jpg",
+        "inStock": false,
+        "categoryId": "xasgy42fa"
+      },
+      {
+        "id": "7b",
+        "name": "BINNUNE",
+        "price": 40,
+        "currency": "USD",
+        "delivery": true,
+        "thumbnail": "https://m.media-amazon.com/images/I/61-YhUL2nkS._AC_SL1500_.jpg",
+        "inStock": true,
+        "categoryId": "xasgy42fa"
+      },
+      {
+        "id": "8b",
+        "name": "HyperX Cloud Core",
+        "price": 70,
+        "currency": "USD",
+        "delivery": false,
+        "thumbnail": "https://m.media-amazon.com/images/I/5164Sqd8b-L._AC_SL1024_.jpg",
+        "inStock": true,
+        "categoryId": "xasgy42fa"
+      },
+      {
+        "id": "9b",
+        "name": "Razer Kraken Ultimate",
+        "price": 110,
+        "currency": "USD",
+        "delivery": true,
+        "thumbnail": "https://m.media-amazon.com/images/I/71Wuv0p6UfL._AC_SL1500_.jpg",
+        "inStock": false,
+        "categoryId": "xasgy42fa"
+      },
+      {
+        "id": "10b",
+        "name": "NUBWO G06",
+        "price": 60,
+        "currency": "USD",
+        "delivery": true,
+        "thumbnail": "https://m.media-amazon.com/images/I/61MHW9Ti7YL._AC_SL1500_.jpg",
         "inStock": true,
         "categoryId": "xasgy42fa"
       }
