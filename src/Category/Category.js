@@ -9,7 +9,20 @@ const Category = () => {
     return (
         <CategoryWrapper>
             <p>Choose a category</p>
-            {categories.map( item => <Link key={item.id} to={`/category/${item.id} `} ><Button className='btn' ><i class={item.icon}></i><br/><p>{item.name}</p><small>{item.description}</small></Button></Link>)}
+            {categories.map( item =>
+                <Link key={item.id} to={`/category/${item.id} `} >
+                    <Button className='btn' >
+                        <i class={item.icon}></i>
+                        <br/>
+                        <p>
+                            {item.name}
+                        </p>
+                        <small>
+                            {item.description}
+                        </small>           
+                    </Button>
+                </Link>
+            )}
         </CategoryWrapper>
     );
 };

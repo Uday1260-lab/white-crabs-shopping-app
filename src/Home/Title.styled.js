@@ -6,12 +6,12 @@ export const TitleWrapper = styled.div`
     text-align: center;
 
     h2{
-        font-size: 300%;
+        font-size: 3em;
         color: #FF0000;
     }
 
     p{
-        font-size: 175%;
+        font-size: 2em;
         color: #E02401;
     }
 

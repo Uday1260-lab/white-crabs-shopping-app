@@ -9,6 +9,7 @@ const Items = ({ products }) => {
 
   const [cartItems, dispatch]=useCart();     
   const addToCart = () => {
+    alert(`${products.name} to Cart`);
     dispatch({
       type:'ADD_TO_CART',
       id,

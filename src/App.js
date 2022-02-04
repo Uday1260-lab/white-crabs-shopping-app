@@ -8,6 +8,7 @@ import React from "react";
 import './App.css';
 import Cart from "./Cart/Cart";
 import { CartProvider } from "./Context/Item.context";
+import NotFoundPage from "./Not-Found-Page/NotFoundPage";
 
 function App() {
 
@@ -30,6 +31,9 @@ function App() {
                             </Route>
                             <Route exact path='/cart' >
                                 <Cart />
+                            </Route>
+                            <Route>
+                                <NotFoundPage/>
                             </Route>
                         </Switch>
                     </CartProvider>

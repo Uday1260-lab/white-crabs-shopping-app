@@ -3,10 +3,10 @@
 }
 
 
-.head h1{
-    font-size: 72px;
-    text-align: center;
-    padding: 50px;
-    color: rgb(31, 219, 252);
-}
 
+.head h1{
+    font-size: 5em;
+    text-align: center;
+    padding: 7%;
+    color: rgb(211, 241, 247);
+}

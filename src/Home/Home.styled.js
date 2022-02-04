@@ -8,7 +8,7 @@ export const HomeWrapper = styled.div`
         text-align: center;
         padding: 2%;
         Button{
-            font-size: 200%;
+            font-size: 2em;
             padding: 5% 10%;
             background: #FFC900;
             Link{
