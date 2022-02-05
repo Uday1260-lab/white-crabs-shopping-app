@@ -10,7 +10,7 @@ const Category = () => {
         <CategoryWrapper>
             <p>Choose a category</p>
             {categories.map( item =>
-                <Link key={item.id} to={`/category/${item.id} `} >
+                <Link key={item.id} to={`/category/${item.id}`} >
                     <Button className='btn' >
                         <i class={item.icon}></i>
                         <br/>
